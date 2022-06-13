@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-import CustomBtn from './components/CustomBtn';
+import NavBar from './components/NavBar';
 import './App.css';
 
 const theme = createTheme({
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <CustomBtn txt="sup world" />
+        <NavBar />
       </ThemeProvider>
     </div>
   );
