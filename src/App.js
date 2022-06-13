@@ -3,6 +3,7 @@ import {
   ThemeProvider,
   makeStyles,
 } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 import NavBar from './components/NavBar';
 import Grid from './components/Grid';
 import './App.css';
@@ -64,7 +65,22 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <NavBar />
-
+        <div className={classes.wrapper}>
+          <Typography variant="h4" className={classes.bigSpace} color="primary">
+            At Rocket.io we are passionate about
+          </Typography>
+          <Typography
+            variant="h5"
+            className={classes.littleSpace}
+            color="primary"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            sodales congue tristique. Cras non pretium sem. Duis interdum lorem
+            sit amet ligula pretium, sed rutrum urna semper. Pellentesque
+            habitant morbi tristique senectus et netus et malesuada fames ac
+            turpis egestas. Phasellus egestas gravida ullamcorper.
+          </Typography>
+        </div>
         <div className={`${classes.grid} ${classes.bigSpace}`}>
           <Grid
             icon={
