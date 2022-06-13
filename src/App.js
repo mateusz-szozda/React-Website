@@ -6,6 +6,7 @@ import {
 import { Typography } from '@material-ui/core';
 import NavBar from './components/NavBar';
 import Grid from './components/Grid';
+import Footer from './components/Footer';
 import './App.css';
 
 import SecurityIcon from '@material-ui/icons/Security';
@@ -138,6 +139,9 @@ function App() {
             title="Connected"
             btnTitle="Show me More"
           />
+        </div>
+        <div className={classes.bigSpace}>
+          <Footer />
         </div>
       </ThemeProvider>
     </div>
